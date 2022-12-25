@@ -1,7 +1,37 @@
 .grid {
   display: grid;
-  grid-template-columns: 150px 150px 200px;
-  justify-items: stretch;
+  grid-template-columns: 5em auto 5em;
+  grid-template-areas: 
+    "header header header"
+    ". content ."
+    ". sidebar ."
+    "footer footer footer"
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 100px 300px 100px 100px;
+    grid-template-areas: 
+      "header header header header"
+      ". content sidebar ."
+      "footer footer footer footer";
+  }
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.big {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 .grid-item {
@@ -19,6 +49,7 @@
     background: #FF5670;
 }
 
+/* 
 .start {
   align-self: center;
   justify-self: center;
@@ -27,4 +58,4 @@
 .end {
   align-self: center;
   justify-self: end;
-}
+} */
