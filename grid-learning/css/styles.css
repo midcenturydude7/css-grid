@@ -1,0 +1,44 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 1em;
+  justify-content: center;
+  align-content: center;
+  padding: 3em;
+  height: 500px;
+}
+
+.grid-item {
+  width: 100px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.one {
+  background: rgb(255, 150, 150)
+}
+
+.two {
+  background: rgb(170, 255, 140)
+}
+
+.three {
+  background: rgb(222, 132, 255)
+}
+
+.four {
+  background: rgb(255, 207, 119)
+}
+
+.five {
+  background: rgb(140, 210, 255)
+}
