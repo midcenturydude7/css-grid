@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-  grid-gap: 1em;
+  grid-gap: 2em;
   justify-content: center;
   align-content: center;
   padding: 3em;
@@ -24,21 +24,26 @@
 }
 
 .one {
-  background: rgb(255, 150, 150)
+  background: rgb(255, 150, 150);
+  grid-area: 2 / 1 / span 2 / span 3
 }
 
 .two {
-  background: rgb(170, 255, 140)
+  background: rgb(170, 255, 140);
 }
 
 .three {
-  background: rgb(222, 132, 255)
+  background: rgb(222, 132, 255);
 }
 
 .four {
-  background: rgb(255, 207, 119)
+  background: rgb(255, 207, 119);
 }
 
 .five {
-  background: rgb(140, 210, 255)
+  background: rgb(140, 210, 255);
+}
+
+.six {
+  background: rgb(212, 191, 200);
 }
